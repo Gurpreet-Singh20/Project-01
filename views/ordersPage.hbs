@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+</head>
+
+<body>
+    {{#each allOrders}}
+    <div>
+        <h3>Order Item</h3>
+        <p>{{this.itemsOrdered}}</p>
+        <h3>Address:</h3>
+        <p>{{this.customerName}}</p>
+        <p>{{this.deliveryAddress}}</p>
+        <p>{{this.status}}</p>
+        <p>{{this.dateAndTime}}</p>
+    </div>
+    <hr>
+    {{/each}}
+</body>
+
+</html>
