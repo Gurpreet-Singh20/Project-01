@@ -7,5 +7,16 @@
 </head>
 <body>
     <h1>Index page working!</h1>
+    {{#each itemsList}}
+    <div>
+        <img src="/{{this.itemImage}}" alt="" style="width: 50px; height: 50px">
+        <p>Name: {{this.itemName}}</p>
+        <p>Discription: {{this.itemDisc}}</p>
+        <p>Price: ${{this.itemPrice}}</p>
+        <p>item id : {{this._id}}</p>
+        <form action="/orderItem/{{this._id}}/{{this.itemName}}"><button>Order now</button></form>
+    </div>
+    <hr>
+    {{/each}}
 </body>
 </html>
