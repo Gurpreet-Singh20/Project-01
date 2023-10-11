@@ -1,7 +1,7 @@
 # Project-01
 restaurant web app
 
-Json for item db
+Json for item collection
 ```
 [
     {
