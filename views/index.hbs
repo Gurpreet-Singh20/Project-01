@@ -1,22 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Index page working!</h1>
+    <div> <img src="https://cdn.dribbble.com/users/2378232/screenshots/5657223/hungry_logo_4x.png?compress=1&resize=400x300g" alt="hungrybytesLogo" class="swiggy-logo"><h1>hungry bytes!</h1></div>
+    <h1>welcome to the world of food...</h1>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/driver-info">order</a></li>
+            <li><a href="/order-status">track</a></li>
+            <!-- Add more menu items for other pages as needed -->
+        </ul>
+    </nav>
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search..eat,,joy..repeat..">
+        <button id="search-button">Search</button>
+    </div>
+    <br>
+ 
+        <div class="image-container">
+        <div class="image">
+            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/restaurant-offers-design-template-9755c79fd6cd3510238e2c246f09b430_screen.jpg?ts=1599490952" alt="Image 1">
+        </div>
+        <div class="image">
+            <img src="https://1.bp.blogspot.com/-Oe0WfN78mUY/XjvD944_CbI/AAAAAAAAAFI/urg7zrTySOo6kK5OkiTjzAMrOxtlw2ZBgCLcBGAsYHQ/s1600/Nri%2BBuddy%2Bindian%2BFood%2BOffers%2B%25282%2529.jpg" alt="Image 2">
+        </div>
+        <div class="image">
+            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/restaurant-take-out-away-fast-food-offer-ad-design-template-8c57016ad3d4b25f49df32a27ca71ab7_screen.jpg?ts=1595582371" alt="Image 3">
+        </div>
+        <div class="image">
+            <img src="https://i.pinimg.com/originals/49/9a/c4/499ac45c756e293a967023b7cab59cd9.jpg" alt="Image 4">
+        </div>
+    </div>
+       
+
+    </header>
+    <h2 style=  "color: #ffffff;"text-align: center;" >Select your food!!!!</h2>
+
     {{#each itemsList}}
-    <div>
-        <img src="/{{this.itemImage}}" alt="" style="width: 50px; height: 50px">
-        <p>Name: {{this.itemName}}</p>
-        <p>Discription: {{this.itemDisc}}</p>
-        <p>Price: ${{this.itemPrice}}</p>
-        <p>item id : {{this._id}}</p>
-        <form action="/orderItem/{{this._id}}/{{this.itemName}}"><button>Order now</button></form>
+
+    <div >
+        <img src="/{{this.itemImage}}" alt="" style="width: 600px; height: 400px" class="img">
+        <p style="text-align: left;">Name: {{this.itemName}}</p>
+        <p style="text-align: left;">Discription: {{this.itemDisc}}</p>
+        <p style="text-align: left;">Price: ${{this.itemPrice}}</p>
+        <p style="text-align: left;">item id : {{this._id}}</p>
+        <form action="/orderItem/{{this._id}}/{{this.itemName}}"><button style="">Order now</button></form>
     </div>
     <hr>
     {{/each}}
+
+    <br>
+
+     <img src="https://s3.amazonaws.com/ksr/assets/001/171/356/96b31afdd8ca1b57a8a847ce112bcd98_large.jpg?1381799476" alt="Image 1">
+
+    
+    <footer>
+        <!-- Your footer content here -->
+        <div class="swiggy-footer">
+            <img src="https://cdn.dribbble.com/users/2378232/screenshots/5657223/hungry_logo_4x.png?compress=1&resize=400x300g" alt="hungrybytesLogo" class="swiggy-logo">
+            <p>&copy;hungrybyteslogo
+Canada
+English
+ABOUT hungrybytes<br>
+Who We Are<br>
+
+Blog<br>
+
+Work With Us
+
+Investor Relations
+
+Report Fraud
+
+Press Kit
+
+Contact Us
+
+hungryland
+
+Blinkit
+
+Feeding India
+
+Hyperpure
+
+hungryland
+
+FOR ENTERPRISES
+hungrybytes For Enterprise
+
+LEARN MORE
+Privacy
+
+Security
+
+Terms
+
+Sitemap
+
+ 2023 hungrybytes. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
 </body>
+
 </html>
