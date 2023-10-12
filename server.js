@@ -202,7 +202,8 @@ app.post("/registerdriver", async (req, res) => {
         const saveddata = await driverobj.save();
         console.log(`driver saved to DB`)
         console.log(saveddata)
-        res.redirect("driverloginpage");
+        // res.redirect("driverloginpage");
+        res.render("driverloginpage",{layout: "layout"})
 
     }
     catch (err) {
@@ -211,7 +212,7 @@ app.post("/registerdriver", async (req, res) => {
 })
 
 app.get("/driverloginpage", (req, res) => {
-    res.render("driverlogin", { layout: false })
+    res.render("driverlogin", { layout: "layout" })
 })
 
 app.get("/updatestatus/:id", (req, res) => {
