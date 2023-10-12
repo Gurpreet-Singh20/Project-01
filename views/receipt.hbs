@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div>
+            <p>order id: {{receipt._id}}</p>
+            <p>Name:{{receipt.customerName}}</p>
+            <p>order item:{{receipt.itemsOrdered}}</p>
+            <p>address:{{receipt.deliveryAddress}}</p>
+            <p>Total amount: {{receipt.total}}</p>
+            <a href="/statusform"><button>check order status</button></a>
+            {{!-- {{/each}} --}}
+        </div>
+    </main>
+</body>
+</html>
