@@ -1,0 +1,225 @@
+body,
+h1,
+h2,
+h3,
+p,
+form,
+input,
+textarea,
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Set a common background color */
+body {
+
+    background-image: url('https://i.pinimg.com/originals/53/f1/2c/53f12ca26caf8ada3835a99da78f60c8.gif');
+    /* Add the path to your background image */
+    background-size: cover;
+    /* Scale the image to cover the entire background */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Prevent repeating the image */
+    color: #000000;
+    /* Set text color to white for better visibility on the background */
+    text-align: center;
+    /* Center the content vertically and horizontally */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Header styles */
+h1 {
+    background-color: #333;
+    color: hsl(61, 100%, 50%);
+    padding: 10px;
+    text-align: right;
+    border: hsl(61, 100%, 50%);
+    border-radius: 1%;
+}
+
+/* Main content container */
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(56, 100%, 57%);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styling for item containers */
+div {
+    background-color: hwb(56 0% 0% / 0.455);
+    padding: 20px;
+    color: hwb(0 0% 100%);
+    font-weight: 50%;
+    display: flex;
+    flex-direction: column;
+    size: 40%;
+
+    border: 1px solid #030303;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Styling for images */
+.img {
+    max-width: 10000%;
+    height: 5%;
+    size: 5%;
+    display: block;
+    text-align: justify;
+
+
+}
+
+/* Horizontal line */
+hr {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+/* Add CSS styles to other elements as needed */
+
+/* Add this to your existing CSS or create a new CSS file */
+
+/* Search bar container */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+/* Search input */
+#search-input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Search button */
+#search-button {
+    background-color: #333;
+    color: hsl(65, 100%, 59%);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Adjust styling as needed */
+/* Add this to your existing CSS or create a new CSS file */
+
+/* Navigation bar styles */
+.navbar {
+    background-color: hsl(58, 100%, 50%);
+    color: #ff9900;
+    padding: 1px 0;
+
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    color: #000000;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: hwb(0 33% 0%);
+}
+
+.nav-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Adjust styling as needed */
+
+/* Add this to your existing CSS or create a new CSS file */
+
+/* Swiggy footer styles */
+.swiggy-footer {
+    background-color: hsl(0, 1%, 62%);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.swiggy-logo {
+    max-width: 100px;
+    height: auto;
+}
+
+
+
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+
+.image-container {
+    display: flex; /* Display the images side by side */
+    justify-content: space-between; /* Space between the images */
+    flex-direction: row;
+}
+
+.image {
+    flex: 1; /* Each image takes an equal amount of space */
+    margin: 10px; /* Add spacing between the images */
+}
+
+img {
+    max-width: 80%; /* Make the images responsive */
+    height: auto;
+}

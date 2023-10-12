@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>check order status</h1>
+        <form action="/checkorderstatus" method="post">
+        <lable>Please enter your order Id</lable>
+        <br>
+        <input type="text" name="orderid">
+        <button>check status</button>
+        </form>
+        <div>
+            <h2>Order status: {{Msg}}</h2>
+        </div>
+    </main>
+</body>
+</html>
